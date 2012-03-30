@@ -1,0 +1,32 @@
+﻿//This dataset was extracted from Phase I of the Eastern lake Survey conducted
+//by the Environmental Monitoring and Assessment Program of the U.S.
+//Environmental Protection Agency in the fall of 1984.  The data is at:
+//http://www.epa.gov/emap2/html/data/surfwatr/data/els.html
+
+//This dataset describes various properties of bodies of water across the
+//United States.  Chemical concentrations, pH, and other analytical
+//measurements are based on a water sample taken at the center of the lake
+//at a depth of 1.5 meters, when possible.
+
+//The target concept is whether the pH of the lake is high (at least 6.5) or
+//low (less than 6.5).
+
+aluminum	continuous	0, 1400                       //Total aluminum concentration, ug/L
+calcium		continuous	0, 70                         //Dissolved calcium, mg/L                        
+carbonate	continuous	0, 100                        //Estimate of carbonate, ueq/L
+color		continuous	0, 400                        //True color measured by centrifuging the sample to remove particles, then using an HACH Model CO-1 Comparator, PCU units
+elevation	continuous	0, 1300                       //Lake elevation in meters, taken from USGS topographic maps
+inlets		discrete	zero, one, few, many          //Number of lake inlets as observed from the helicopter.  This data was modified to form a discrete-valued attribute: "few" means 2 or 3, "many" means 4 or more.
+potassium	continuous	0, 11                         //Dissolved potassium, mg/L
+area		continuous	0, 22000                      //Lake surface area in hectares, measured using an electronic planimeter on USGS topographic maps
+type		discrete	lake, pond, reservoir, swamp  //Body of water type
+volume		continuous	0, 5300                       //Estimated lake volume, in units of 10^6 cubic meters
+latitude	continuous	27, 49                        //Latitude expressed as degrees and decimal degrees
+longitude	continuous	-95, -67                      //Longitude expressed as degrees and decimal degrees
+ammonium	continuous	0, 1                          //Ammonium ion, mg/L
+nitrate		continuous	0, 10                         //Nitrate ion, mg/L
+outlets		discrete	zero,one,few                  //Number of lake outlets as observed from the helicopter.  This data was modified to form a discrete-valued attribute: "few" means 2, 3, 4, or 5
+ph		output		low, high                     //Measured pH of water sample.  This data was modified to form a target concept: "low" ph is less than or equal to 6.75.  "high" ph is greater than 6.75
+precipitation	continuous	0, 2                          //Annual precipitation in meters
+runoff		discrete	5, 10, 15, 20, 25, 30         //Surface water runoff interpolated from USGS map, in/yr.  This data was modified to form a discrete-valued attribute: "30" includes measurements greater than "30", "5" includes less than "5"
+sulfate		continuous	0, 100                        //Sulfate ion, mg/L

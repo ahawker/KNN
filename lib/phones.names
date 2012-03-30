@@ -1,0 +1,28 @@
+//
+//Andrew Hawker
+//CS 495 - Machine Learning
+//Due: Sept 5th, 2009
+//
+//Phone service data
+//Attempt to determine if a customer will keep their account
+//Based on their useage numbers.
+//Data consists of customer phone use over a one month period.
+//
+//Target Concept is whether or not the customer continued their service.
+//Status = False if the customer continued their phone service.
+//Status = True if the customer canceled their phone service.
+
+
+account_length			discrete		new, normal, old	//How long the customer has had their phone account. 0-50=new, 50-100=normal, 100+=old
+area_code			continuous		0, 999			//Area code of the customer's home location.
+international_plan		discrete		yes, no			//Do they have a international plan?
+voice_mail_plan			discrete		yes, no			//Do they have a voice mail plan?
+total_day_minutes		continuous		0, 1000			//Total number of minutes used for daytime calls.
+total_day_calls			continuous		0, 300			//Number of daytime calls made(to use up the total number of daytime minutes).
+total_evening_minutes		continuous		0, 1000			//Total number of minutes used for evening calls.
+total_evening_calls		continuous		0, 300			//Number of evening calls made(that used up the total number of evening minutes).
+total_night_minutes		continuous		0, 1000			//Total number of minutes used for night time calls.
+total_night_calls		continuous		0, 300			//Number of night time calls made(that used up the total number of night time minutes).
+total_international_minutes	continuous		0, 1000			//Total number of minutes used for international calls.
+total_international_calls	continuous		0, 300			//Number of international calls made(that used up the total number of international minutes).
+account_canceled		output			True, False		//Whether or not this customer canceled their service. Modified to be target concept. True if canceled, false if didn't.
