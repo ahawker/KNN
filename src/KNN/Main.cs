@@ -8,7 +8,7 @@ namespace KNN {
     internal class Project3 {
         private static void Main(string[] args) {
             if (args.Length != 2) {
-                Console.WriteLine("Project3.exe *.names *.data");
+                Console.WriteLine("KNN.exe *.names *.data");
                 return;
             }
             DateTime start = DateTime.Now;
