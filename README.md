@@ -1,0 +1,3 @@
+# KNN (K-Nearest Neighbors)
+
+KNN is an implementation of the [K-Nearest Neighbors](http://en.wikipedia.org/wiki/K-nearest_neighbor_algorithm) algorithm. K-Nearest Neighbor is a method for classifying object based on training/tuning examples. Additionally, this implementation uses [Forward Feature Selection](http://en.wikipedia.org/wiki/Feature_selection) for tuning optimal 'K' values based on training data.
